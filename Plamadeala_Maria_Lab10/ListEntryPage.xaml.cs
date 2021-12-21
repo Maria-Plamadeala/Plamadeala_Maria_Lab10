@@ -21,7 +21,7 @@ namespace Plamadeala_Maria_Lab10
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            listView.ItemsSource = await App.Database.GetShopListAsync();
+            listView.ItemsSource = await App.Database.GetShopListsAsync();
         }
 
         async void OnShopListAddedClicked(object sender, EventArgs e)
